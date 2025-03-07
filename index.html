@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodFlix - หนังตามอารมณ์</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="page-loader" class="loader-container">
+        <div class="loader"></div>
+        <p>กำลังโหลด MoodFlix...</p>
+    </div>
+    <div id="search-loader" class="loader-container search-loader">
+        <div class="loader"></div>
+        <p>กำลังค้นหาหนังที่เหมาะกับคุณ...</p>
+    </div>
+
+    <div class="container">
+        <h1>MoodFlix 🎬</h1>
+        <p>เลือกอารมณ์ของคุณ แล้วเราจะหาหนังที่เหมาะกับคุณ!</p>
+
+        <div class="mood-selection">
+            <label for="mood">เลือกอารมณ์ของคุณ:</label>
+            <select id="mood">
+                <option value="happy">😊 สุข</option>
+                <option value="sad">😢 เศร้า</option>
+                <option value="excited">😎 ตื่นเต้น</option>
+                <option value="chill">😴 ชิล</option>
+                <option value="romantic">❤️ โรแมนติก</option>
+                <option value="scared">👻 กลัว</option>
+                <option value="adventurous">🌍 ผจญภัย</option>
+                <option value="funny">😂 ตลก</option>
+            </select>
+            <button id="find-movie">ค้นหาหนัง 🎥</button>
+        </div>
+
+        <div class="result" id="result"></div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
